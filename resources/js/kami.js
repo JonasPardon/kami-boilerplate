@@ -1,0 +1,1 @@
+/Users/jonaspardon/code/kami-packages/kami-core/src/resources/js/app.js
