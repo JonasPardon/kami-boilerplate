@@ -18,6 +18,10 @@ class PageController extends Controller
         $page = $this->pageRepository
             ->show($slug);
 
+        if (!$page) {
+            return abort('404');
+        }
+
         $data = [
             'page' => $page,
         ];

@@ -38,7 +38,7 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'kami_users',
         ],
 
         'api' => [
@@ -71,10 +71,15 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'kami_users' => [
+            'driver' => 'eloquent',
+            'model' => JonasPardon\KamiCore\Models\User::class,
+        ]
+
+//         'users' => [
+//             'driver' => 'database',
+//             'table' => 'users',
+//         ],
     ],
 
     /*
