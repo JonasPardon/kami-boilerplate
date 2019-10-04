@@ -22,6 +22,6 @@ class PageController extends Controller
             'page' => $page,
         ];
 
-        return view('page', $data);
+        return view('pages.page', $data);
     }
 }
