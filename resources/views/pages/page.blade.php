@@ -1,4 +1,4 @@
-@extends('layouts.master')s
+@extends('layouts.master')
 
 @section('title', $page->title . ' | ')
 
